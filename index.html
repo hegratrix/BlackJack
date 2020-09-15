@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+  <!--<![endif]-->
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Alfa+Slab+One&family=Cinzel:wght@400;700;900&family=Lobster&family=Special+Elite&family=VT323&family=Permanent+Marker&family=Press+Start+2P&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <div class="game">
+      <div id="fullBj">
+
+
+        <h3>420 BlackJack!!!</h3>
+
+        <div class="game-body">
+          <div class="game-options">
+            <input type="button" id="btnStart" class="btn" value="Start" onclick="startblackjack()">
+            <input type="button" id="btnDeal" class="btn" value="Deal" onclick="dealNewHand()">
+            <input id="hitMeButt" type="button" class="btn" value="Hit Me" onclick="hitMe()">
+            <input type="button" id="bjStayH2" class="btn" value="Stay" onclick="stay()">
+          </div>
+
+          <div class="status" id="status"></div>
+
+          <div id="deck" class="deck">
+            <div id="deckcount">52</div>
+          </div>
+          <div id="bjPlayerGroup">
+            <div id="players" class="players">
+            </div>
+          </div>
+          <div class="clear"></div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+    <div id="bjMainScore">
+
+      <h2 id="mainScoreHeadBJ">Score</h2>
+      <hr id="bjHR">
+      <div class="bjMainScoreBoard">
+
+
+        <h3 id="bjMainWonHead" class="bjMainScoreBoardScore">
+          Win
+          <br>
+          <span class="bjMainScoreScore" id="mainBJWon">0</span>
+        </h3>
+        <h3 id="bjMainTiedHead" class="bjMainScoreBoardScore">
+
+          Tied
+          <br>
+          <span class="bjMainScoreScore" id=mainBJTied>0</span>
+        </h3>
+
+        <h3 id="bjMainLostHead" id=mainBJLosses class="bjMainScoreBoardScore">
+          Loss
+          <br>
+          <span class="bjMainScoreScore" id="mainBJLost">0</span>
+        </h3>
+
+
+        <hr id="bjHR">
+        <h3 id="bjMainScoreBoardScoreMore">
+          More!!!
+        </h3>
+      </div>
+    </div>
+
+
+
+
+
+
+
+    <div id="infoScreen">
+      <div id="infoDiv">
+        <h2 id="info420BJ">Information...</h2>
+        <hr id="bjHR">
+        <table id="bjInfoTable">
+          <tr>
+            <td id="aboutBJInfoLink" class="bjCats">About...</td>
+          </tr>
+          <tr>
+            <td id="howToBJInfoLink" class="bjCats">How To Play...</td>
+          </tr>
+          <tr>
+            <td id="assBJLink" class="bjCats">Assignment Progress...</td>
+          </tr>
+          <tr>
+            <td id="backToBJLink" class="bjCats">Back To Game...</td>
+          </tr>
+        </table>
+
+        <hr id="bjHR">
+
+
+      </div>
+
+      <div id="about420BJDiv">
+
+        <h2 id="about420BJ">About 420 BlackJack...</h2>
+        <hr id="bjHR">
+        <h3 id="aboutBJText">Have you ever been high at the tables too stoned to remember that there are hardcore gamblers out there... who not only have rules for how they play... but know exactly what you should do as well... down to the style
+          range
+          you're allow to play by... depending on where you sit...
+          <br><br>
+          Meanwhile... you're just proud that you can manage to still do the math... where the largest possible sum might be 30... but only if your dumbass went and hit on a hard twenty as a goof...
+          <br><br>
+          People really hate when you do that... then again... that's sounds more like something that I'd do if I were drunk... I don't have any experience gambling while high... I'm having an anxiety attack right now just thinking about it...
+          <br><br>
+          Whether you're the person who wants final say over everyone's every move at the table... or that stoner who looks lost in thought about a potential power move... while in reality you're just unaware that it's your turn... the 420
+          BlackJack's for you...
+          <br><br>
+          <span id="aboutBJtoPlay">Play 420 BlackJack...</span> and you'll be 100% in control of all of the BJ action!!!
+          <br><br>
+          <span id="aboutLearn420BJ">Learn How To Play!!!</span>
+        </h3>
+      </div>
+
+    </div>
+
+    <div id="howToBJDiv">
+      <h2 id="how420BJ">How To Play 420 BlackJack...</h2>
+      <hr id="bjHR">
+      <h3 id="howBJText">Since I built this based on an open source BlackJack code... where I could only figure out to display up to four cards to each side... without breaking the design... I had to make up a few new rules to work with this
+        limitation... with that...
+        <br><br>
+        Here are the rules to win 420 BlackJack:
+      </h3>
+
+      <ol id="bjHowList">
+        <li class="bjHowListItem">You have full control over both Hand 1 and Hand 2... with no down card... meaning you see everything...hell... I even provided a card counting tool in the upper left corner of the
+          game board...</li>
+        <li class="bjHowListItem">As stated above both Hands will be dealt a maximum of 4 cards...</li>
+        <li class="bjHowListItem">Hand 2 MUST equal at least 16 points when the card max of 4 is met... not doing so will result in a push for a busted Hand 1... or a win for any Hand 1 equalling 21 and under...
+        </li>
+        <li class="bjHowListItem">As a bonus... double dealt natural BlackJacks equal double the points...
+        </li>
+        <li class="bjHowListItem">Ultimately... Hand 1 MUST beat a qualified Hand 2 using traditional BlackJack rules... based on your decisions for both hands...</li>
+        <li class="bjHowListItem"><span id="howToToPlay">Play... and play again...</span> until the quirks of the game become clear to you!!!</li>
+
+      </ol>
+    </div>
+
+    </div>
+
+
+
+
+    <div id="assUpBJDiv">
+
+      <h2 id="assUpBJ">Django BootCamp Update...</h2>
+      <hr id="bjHR">
+      <h3 id="assUpBJText">
+        Just like the maze games... 420 BlackJack is not actually part of the JavaScript Two assignment... but is instead an open source code that only uses the languages that I've learned up to this point in the Django Full-Stack Bootcamp that's
+        providing the framework for this page...
+        <br><br>
+        It turns out that learning to tweak other's coding is a learning experience on its own... which is why I decided to put in the extra time to add all this bonus content...
+        <br><br>
+        That... and I felt that the need for more than a simple Tic Tac Toe game... the actual assignment... to keep users coming back for more...
+        <br><br>
+        I'm actually developing each game on the Games List in order... so... I hope you will see an improvement in the quality of the games play if you explore...
+        <br><br>
+        If you would like to build a similar BlackJack game for your site that uses nothing but HTML, CSS and JavaScript... then... <span id="linkToBJSource">here is a link to the original source code!!!</span>
+        <br><br>
+        <span id="assUpBjToGame">Now get back to playing the game!!! </span>
+
+      </h3>
+    </div>
+
+    <div id="bjInfo">
+      <h4>?</h4>
+    </div>
+    <div>
+      <h4 id="bjToList">return
+        <br>to
+        <br>list
+        <br>...</h4>
+    </div>
+    <div id="bjAdGroup">
+
+      <div id="bjAd">
+        <a target="_blank" href="https://shareasale.com/r.cfm?b=28143&amp;u=2513768&amp;m=6299&amp;urllink=&amp;afftrack="><img src="https://static.shareasale.com/image/MagicWorldonline11.jpg" border="0" width="100%" height="100%" /></a>
+
+      </div>
+      <script src="./js/game.js" async defer></script>
+      <script src="./js/navigation.js" async defer></script>
+      <script src="./js/scoreboard.js" async defer></script>
+  </body>
+
+</html>

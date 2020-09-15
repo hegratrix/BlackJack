@@ -1,0 +1,323 @@
+body {
+  background-color: #394d4c;
+}
+.modal {
+	position: absolute;
+	top: 60%;
+	left: 35%;
+  width: 30%;
+  color: white;
+  background-color: black;
+  font-family: 'Press Start 2P', cursive;
+	display: none;
+}
+.game {
+  width: 86vw;
+  margin: 0 auto;
+  background: limegreen;
+  border: solid 2vw darkgreen;
+  text-align: center;
+  height: 80vw;
+}
+#fullBj {
+  display: block;
+}
+
+.btn {
+  font-size: 2vw;
+  padding: 2.5vw 5vw;
+  border: none;
+  cursor: pointer;
+  background: darkGreen;
+  color: whitesmoke;
+  font-family: 'Press Start 2P', cursive;
+}
+#btnDeal {
+  display: none;
+}
+#hitMeButt {
+  display: none;
+}
+#bjStayH2 {
+  display: none;
+}
+.btn:hover {
+  background: forestgreen;
+}
+.game h3 {
+  padding: 5vw;
+  background: black;
+  color: whitesmoke;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3.25vw;
+}
+.game .game-body {
+  padding: 2.5vw;
+}
+.game .game-options {
+  text-align: center;
+  margin-left: 12.5vw;
+}
+.game .card {
+  width: 5vw;
+  height: 8vw;
+  padding: 2.5vw;
+  background-color: whitesmoke;
+  display: inline-block;
+  border-radius: 1vw;
+  font-size: 2vw;
+  text-align: center;
+  margin: .75vw;
+  border: solid .5vw lime;
+  font-family: 'Press Start 2P', cursive;
+}
+.game .status {
+  display: inline-block;
+  background: gold;
+  border: solid .5vw whitesmoke;
+  border-radius: 1vw;
+  padding: .5vw 2vw;
+  margin: 0 auto;
+  margin-top: 1vw;
+  display: none;
+}
+.players {
+  width: 75vw;
+  margin: 0 auto;
+  margin-top: 1vw;
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+}
+#bjPlayerGroup {
+  margin-left: 7.5vw;
+}
+.player {
+  width: 39%;
+  border: solid 1vw whitesmoke;
+  border-radius: 1vw;
+  padding: 1vw;
+  display: inline-block;
+  margin: 1vw 0vw 0vw 2.5vw;
+  vertical-align: top;
+  background: whitesmoke;
+}
+.player.active {
+  border: solid 1vw darkgreen;
+}
+.points {
+  text-align: center;
+  font-size: 2.5vw;
+  font-weight: bold;
+  margin: 1vw;
+}
+.deck {
+  float: left;
+  background: lightyellow;
+  color: darkgreen;
+  padding: 1vw;
+  font-size: 2vw;
+  margin-top: -6.5vw;
+  font-weight: bolder;
+  border-radius: 1vw;
+  border: double 1vw forestgreen;
+  font-family: 'Press Start 2P', cursive;
+}
+#infoScreen {
+  position: absolute;
+  width: 75vw;
+  margin-top: -82.5vw;
+  margin-left: 10vw;
+}
+#infoDiv {
+  display: none
+}
+.bjCats {
+  color: yellow;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2.5vw;
+  padding-top: 5vw;
+  text-align: center;
+}
+#info420BJ {
+  color: yellow;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 5vw;
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+  text-align: center;
+}
+#about420BJDiv {
+  display: none;
+}
+#about420BJ {
+  color: yellow;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3vw;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+  text-align: center;
+}
+#aboutBJText {
+  color: whitesmoke;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.5vw;
+  margin-top: 2.5vw;
+  line-height: 1.5;
+}
+#aboutBJtoPlay {
+  color: yellow;
+}
+#aboutLearn420BJ {
+  color: yellow;
+}
+#bjInfoTable {
+  margin: 0 auto;
+  margin-top: 2.5vw;
+  margin-bottom: 7.5vw;
+}
+#howToBJDiv {
+  display: none;
+  position: absolute;
+  width: 75vw;
+  margin-top: -82.5vw;
+  margin-left: 10vw;
+}
+#how420BJ {
+  color: yellow;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2.5vw;
+  padding-top: 2vw;
+  padding-bottom: 1vw;
+  text-align: center;
+}
+#howBJText {
+  color: whitesmoke;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.5vw;
+  margin-top: 2.5vw;
+  line-height: 1.5;
+}
+.bjHowListItem {
+  color: whitesmoke;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.5vw;
+  margin-top: 1vw;
+  line-height: 1.5;
+}
+#howToToPlay {
+  color: yellow;
+}
+#bjHR {
+  border: .25vw solid lime;
+}
+#assUpBJDiv {
+  display: none;
+  position: absolute;
+  width: 75vw;
+  margin-top: -82.5vw;
+  margin-left: 10vw;
+}
+#assUpBJ {
+  color: yellow;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2.5vw;
+  padding-top: 2vw;
+  padding-bottom: 1vw;
+  text-align: center;
+}
+#assUpBJText {
+  color: whitesmoke;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.5vw;
+  margin-top: 2.5vw;
+  line-height: 1.5;
+}
+#linkToBJSource {
+  color: yellow;
+}
+#assUpBjToGame {
+  color: yellow;
+}
+#bjInfo {
+  color: yellow;
+  position: absolute;
+  margin-left: 87vw;
+  margin-top: -83.75vw;
+  font-size: 2vw;
+  z-index: 5;
+  font-family: 'Press Start 2P', cursive;
+  display: block;
+}
+#bjToList {
+  color: yellow;
+  position: absolute;
+  text-align: center;
+  margin-left: 82.5vw;
+  margin-top: -7vw;
+  font-size: 1.25vw;
+  z-index: 5;
+  font-family: 'Press Start 2P', cursive;
+}
+#bjMainScore {
+  display: block;
+  position: absolute;
+  width: 7.5vw;
+  margin-top: -50vw;
+  margin-left: 6.5vw;
+}
+#mainScoreHeadBJ {
+  color: yellow;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2vw;
+  padding-top: 2vw;
+  padding-bottom: 1vw;
+  text-align: center;
+}
+.bjMainScoreBoardScore {
+  width: 6vw;
+  color: whitesmoke;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.75vw;
+  text-align: center;
+  margin-left: 1vw;
+  margin-top: 2.5vw;
+  line-height: 1.5;
+}
+#bjMainWonHead {
+  color: forestgreen;
+}
+#bjMainLostHead {
+  color: red;
+}
+#bjMainTiedHead {
+  color: yellow;
+}
+.bjMainScoreScore {
+  font-size: 2.5vw;
+  color: whitesmoke
+}
+#bjMainScoreBoardScoreMore {
+  width: 6vw;
+  color: whitesmoke;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.25vw;
+  text-align: center;
+  margin-left: .5vw;
+  margin-top: 2.5vw;
+  line-height: 1.5;
+}
+#linkToBJSource {
+  color: yellow;
+}
+#assUpBjToGame {
+  color: yellow;
+}
+#bjMainScore hr {
+  margin-left: .5vw;
+  ;
+}
+#bjAdGroup {
+  width: 90vw;
+  padding-top: 2.5vw;
+  margin: 0 auto;
+}
